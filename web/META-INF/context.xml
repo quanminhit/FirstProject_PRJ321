@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/FirstProject_PRJ">
+  <!--type để xác định ai là 007 -->
+  <!-- Steps to connect DB -->
+  <!--Các bước định nghĩa 1 Data Source -->
+  <!-- Bước 1 Defines -->
+  <!-- Exception: JDPC cannot create thì đi vào context.xml tìm lỗi-->
+  <Resource auth="Container" driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" name="DS007" password="12345" type="javax.sql.DataSource" url="jdbc:sqlserver://localhost:1433;databaseName=Loginn" username="sa"/>
+  <!--    <Resource
+    name="DS007" type="javax.sql.DataSource" auth="Container"
+    driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+    url="jdbc:sqlserver://localhost:1433;databaseName=Loginn"
+    username="sa" password="12345"    
+    />-->
+  <!-- Bước 2: Reference to web.xml file -->
+</Context>
